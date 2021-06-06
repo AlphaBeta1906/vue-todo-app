@@ -1,9 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+
+		<link rel='icon' href='Vue.ico' type='image/x-icon'/ >
+		<meta name="description" content="simple todo application build using vue js">
+		<link rel="canonical" href="https://vue-todo-2234.netlify.app/" />
+		<meta name=”robots” content=”index, follow”>
+		<meta property="og:type" content="app" />
+		<meta property="og:title" content="Vue todo app" />
+		<meta property="og:description" content="simple todo application build using vue js" />
+
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Document</title>
+		<title>Vue todo app</title>
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 	</head>
 	<body
@@ -27,6 +36,7 @@
 					<input
 					v-model="message"
 					@keyup.enter="addItem"
+					placeholder = "add todo"
 					style="
 					margin-right: 2%;
 					width: 60%"
@@ -63,7 +73,7 @@
 											</p>
 										</td>
 										<td>
-											<a 	href="#"
+											<a 	href=""
 												class="btn-sm btn-danger"
 												style="text-decoration: none;padding-left: 5px"
 												v-on:click="removeItem(todo.id) ">
